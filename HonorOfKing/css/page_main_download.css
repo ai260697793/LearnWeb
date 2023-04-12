@@ -1,0 +1,25 @@
+/* download 区域 */
+.main .news-section .download {
+  display: flex;
+  flex-direction: column;
+  width: 236px;
+  background: blue;
+}
+
+.news-section .download a {
+  display: block;
+  background: url(../img/main_sprite.png) no-repeat;
+}
+
+.news-section .download .download-btn {
+  height: 128px;
+  background-position: 0 -219px;
+}
+.news-section .download .guard-btn {
+  height: 106px;
+  background-position: 0 -350px;
+}
+.news-section .download .experience-btn {
+  flex: 1;
+  background-position: 0 -461px;
+}

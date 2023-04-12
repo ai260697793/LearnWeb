@@ -1,0 +1,32 @@
+/* banner区域 */
+.main .news-section .banner {
+  width: 605px;
+  background: #000;
+}
+.news-section .banner > ul {
+  display: flex;
+  overflow: hidden;
+}
+.news-section .banner .image-list .item {
+  width: 100%;
+  flex-shrink: 0;
+}
+.news-section .banner .title-list {
+  display: flex;
+  height: 44px;
+  line-height: 44px;
+}
+.news-section .banner .title-list .item {
+  flex: 1;
+  text-align: center;
+}
+.news-section .banner .title-list .item a {
+  display: block;
+  font-size: 14px;
+  color: #b1b2be;
+}
+.news-section .banner .title-list .item a:hover,
+.news-section .banner .title-list .item:nth-child(1) a {
+  color: #f3c258;
+  background-color: rgba(255, 255, 255, 0.15);
+}

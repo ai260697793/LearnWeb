@@ -1,0 +1,107 @@
+.top {
+  border: 1px solid #f5f5f5;
+}
+
+.top .area {
+  display: flex;
+  justify-content: space-between;
+  height: 41px;
+  line-height: 41px;
+}
+
+.top .top-left {
+  display: flex;
+}
+
+.top .top-left .logo a {
+  position: relative;
+  display: block;
+  z-index: 11;
+  width: 150px;
+  text-indent: -9999px;
+  background: url(../img/top_logo.png) no-repeat center center;
+}
+
+.top .top-left .recommend {
+  position: relative;
+}
+
+.top .top-left .recommend .recommend-ad {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: -150px;
+  display: none;
+}
+
+.top .top-left .recommend:hover .recommend-ad {
+  display: block;
+}
+
+.top .top-right {
+  display: flex;
+}
+
+.top .top-right .ranking {
+  margin-left: 20px;
+}
+
+.top .top-right a {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  color: #666666;
+}
+
+.top .top-right .grow>a::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background: url(../img/top_sprite.png) no-repeat -30px 0;
+}
+
+.top .top-right .grow>a {
+  padding-left: 30px;
+}
+
+.top .top-right .ranking>a::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background: url(../img/top_sprite.png) no-repeat 0 0;
+
+  opacity: 0.2;
+  transform: rotate(90deg);
+}
+
+.top .top-right .ranking>a {
+  padding-right: 30px;
+}
+
+.top .top-right .ranking a .dropdown {
+  position: absolute;
+  z-index: 9;
+  right: 0;
+  top: 41px;
+  display: none;
+}
+
+.top .top-right .ranking a:hover .dropdown {
+  display: block;
+  animation: opacityAnim 400ms ease forwards;
+}
+
+.top .top-right .ranking a .dropdown iframe {
+  width: 708px;
+  height: 582px;
+}

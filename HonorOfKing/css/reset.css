@@ -1,0 +1,23 @@
+/* reset.css 样式重置 */
+
+body, h1, h2, h3, ul, ol, li, p, dl, dd {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+i, em {
+    font-style: normal;
+}

@@ -1,0 +1,61 @@
+/* news区域 */
+.main .news-section .news {
+  flex: 1;
+  overflow: hidden;
+  padding: 0 17px;
+}
+
+.news-section .news .title-list {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  border-bottom: 1px solid #000;
+}
+.news-section .news .title-list .item {
+  flex: 1;
+}
+.news-section .news .title-list .item a {
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  box-sizing: border-box;
+  color: #b8b9c5;
+  text-align: center;
+  transition: border-bottom 200ms ease-in;
+}
+.news-section .news .title-list .item:not(.more) a:hover,
+.news-section .news .title-list .item:nth-child(1) a {
+  color: #f3c258;
+  border-bottom: 3px solid #f3c258;
+}
+.news-section .news .notice {
+  height: 36px;
+  line-height: 36px;
+  margin-top: 18px;
+  padding: 0 15px;
+  background: #414046;
+}
+.news-section .news .notice > a {
+  display: block;
+  font-size: 18px;
+  color: #f3c258;
+}
+
+.news-section .news .news-list {
+  margin-top: 12px;
+}
+.news-section .news .news-list .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+}
+.news-section .news .news-list .item .desc {
+  flex: 1;
+  color: #b8b9c5;
+  white-space: nowrap;
+}
+.news-section .news .news-list .item .date {
+  padding: 0 8px;
+  color: #999;
+  font-size: 12px;
+}
